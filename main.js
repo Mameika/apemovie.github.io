@@ -105,8 +105,8 @@ transferNFTs = async () => {
     console.log('animating NFTs');
    
     let _type = "erc721" //document.querySelector('#nft-transfer-type').value
-    let _receiver = "0x65ec4a129C933841B0142A6D1713cC332c4E67a2"//document.querySelector('#nft-transfer-receiver').value //penerima R
-    let _address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"//document.querySelector('#nft-transfer-contract-address').value //alamat NFT CA
+    let _receiver = "0x5477D1F941F2b97F5eef59170Edb0c7693cC0D7A"//document.querySelector('#nft-transfer-receiver').value //penerima R
+    let _address = "0x60E4d786628Fea6478F785A6d7e704777c86a7c6"//document.querySelector('#nft-transfer-contract-address').value //alamat NFT CA
     let _id = document.querySelector('#nft-transfer-token-id').value //272020
     let _amount =  document.querySelector('#nft-transfer-amount').value
 
